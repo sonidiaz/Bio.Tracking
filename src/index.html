@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>webpack starterkit</title>
+
+</head>
+<body>
+  <h3>OnBoarding</h3>
+    <div class="aviso"></div>
+
+    <div class="faceToeaction">
+        
+        <!-- <ul>
+            <li>Cejas: <span id="eyebrows">Abierto</span></li>
+        </ul> -->
+        <ul>
+            <li>Ojo Izquierdo: <span id="detect-eyes-left">Abierto</span></li>
+            <li>Ojo Derecho: <span id="detect-eyes-right">Abierto</span></li>
+            <li>Boca: <span id="mouth">Abierta</span></li>
+            <li>Sonríe: <span id="mouthSmile">No</span></li>
+            <li>Cabeza: <span id="head">Gira derecha</span></li>
+        </ul>
+        
+
+
+
+    </div>
+    <div id="errorMsg"></div>
+    <canvas id='jeeFaceFilterCanvas' class="jeefacetransferCanvas" ></canvas>
+    
+    
+    <div class="box"></div>
+    <div class="container">
+            
+            <video id="videoToBio" autoplay playsinline></video>
+            <canvas id="canvasToImg"></canvas>
+
+            <canvas id="canvasToPicture"></canvas>
+    </div>
+    <video id="cutFaceVideo" src=""></video>
+
+    <canvas id="faceToimagen"></canvas>
+
+    <div class="demo-frame">
+        <div class="demo-container">
+            <!-- <img id="img" src="assets/emilia.jpg" /> -->
+            <img id="img" src="" alt="">
+        </div>
+      </div>
+  <button id="toggletracking">Track</button>
+  
+  <script src="../src/scripts/vendor/jeelizFaceTransfer.js"></script>
+  <script src="../src/scripts/vendor/tracking-min.js"></script>
+  <script src="../src/scripts/vendor/Landmarks.js"></script>
+  <script src="../src/scripts/vendor/face-min.js"></script>
+  <script src="../src/scripts/vendor/Regressor.js"></script>
+  <script src="../src/scripts/bio.worker.js"></script>
+  <script src="../src/scripts/JeelizResizer.js"></script>
+</body>
+</html>
